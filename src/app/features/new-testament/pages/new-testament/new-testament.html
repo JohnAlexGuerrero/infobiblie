@@ -1,0 +1,254 @@
+<main class="flex-1 overflow-y-auto bg-background p-8 md:p-16 lg:p-24 relative">
+    <!-- Hero Decorative Section -->
+    <div class="mb-20 text-center max-w-2xl mx-auto">
+        <h1 class="text-5xl md:text-7xl font-display italic tracking-tight text-primary mb-6">Nuevo Testamento</h1>
+        <p class="text-on-surface-variant font-body text-lg italic leading-relaxed">
+            Los libros del Nuevo Testamento fueron escritos por los discípulos de Jesucristo. Ellos querían que otros oyeran de la vidad nueva que es posible a través de la muerte y resurrección de Jesúus.
+        </p>
+        <div class="mt-8 flex justify-center">
+            <div class="h-px w-24 bg-tertiary-fixed-dim/40"></div>
+            <span class="material-symbols-outlined mx-4 text-tertiary-fixed-dim">auto_stories</span>
+            <div class="h-px w-24 bg-tertiary-fixed-dim/40"></div>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-7xl mx-auto">
+        <!-- Section: Evangelios -->
+        <section class="lg:col-span-8">
+            <div class="flex items-baseline gap-4 mb-8">
+                <h2 class="text-3xl font-display font-bold text-primary">Evangelios</h2>
+                <div class="h-px flex-1 bg-surface-container-high"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div routerLink="/new-testament/mateo"
+                    class="group bg-surface-container-low p-8 rounded-xl transition-all hover:bg-surface-container hover:shadow-lg active:scale-[0.98] cursor-pointer">
+                    <span
+                        class="font-label text-[10px] tracking-[0.2em] font-extrabold text-tertiary-fixed-dim uppercase mb-2 block">The
+                        Tax Collector</span>
+                    <h3 class="text-2xl font-display italic text-primary group-hover:text-amber-800 transition-colors">
+                        san mateo</h3>
+                    <p class="mt-4 font-body text-sm text-on-surface-variant leading-relaxed italic opacity-80">Behold,
+                        I am with you always, even unto the end of the world.</p>
+                </div>
+                <div routerLink="/new-testament/marcos"
+                    class="group bg-surface-container-low p-8 rounded-xl transition-all hover:bg-surface-container hover:shadow-lg active:scale-[0.98] cursor-pointer">
+                    <span
+                        class="font-label text-[10px] tracking-[0.2em] font-extrabold text-tertiary-fixed-dim uppercase mb-2 block">The
+                        Servant</span>
+                    <h3 class="text-2xl font-display italic text-primary group-hover:text-amber-800 transition-colors">
+                        san marcos</h3>
+                    <p class="mt-4 font-body text-sm text-on-surface-variant leading-relaxed italic opacity-80">For even
+                        the Son of Man came not to be served but to serve.</p>
+                </div>
+                <div routerLink="/new-testament/lucas"
+                    class="group bg-surface-container-low p-8 rounded-xl transition-all hover:bg-surface-container hover:shadow-lg active:scale-[0.98] cursor-pointer">
+                    <span
+                        class="font-label text-[10px] tracking-[0.2em] font-extrabold text-tertiary-fixed-dim uppercase mb-2 block">The
+                        Physician</span>
+                    <h3 class="text-2xl font-display italic text-primary group-hover:text-amber-800 transition-colors">
+                        san lucas</h3>
+                    <p class="mt-4 font-body text-sm text-on-surface-variant leading-relaxed italic opacity-80">For the
+                        Son of Man came to seek and to save the lost.</p>
+                </div>
+                <div routerLink="/new-testament/juan"
+                    class="group bg-surface-container-low p-8 rounded-xl transition-all hover:bg-surface-container hover:shadow-lg active:scale-[0.98] cursor-pointer">
+                    <span
+                        class="font-label text-[10px] tracking-[0.2em] font-extrabold text-tertiary-fixed-dim uppercase mb-2 block">The
+                        Logos</span>
+                    <h3 class="text-2xl font-display italic text-primary group-hover:text-amber-800 transition-colors">
+                        san juan</h3>
+                    <p class="mt-4 font-body text-sm text-on-surface-variant leading-relaxed italic opacity-80">In the
+                        beginning was the Word, and the Word was with God.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Históricos (Marginalia style) -->
+        <section class="lg:col-span-4 space-y-6">
+            <div class="flex items-baseline gap-4 mb-4">
+                <h2 class="text-xl font-display italic text-primary">Históricos</h2>
+                <div class="h-px flex-1 bg-surface-container-high"></div>
+            </div>
+            <div routerLink="/new-testament/hechos" 
+                class="bg-surface-container-lowest p-8 border-l-4 border-primary-container shadow-sm">
+                <h3 class="text-3xl font-display italic text-primary">hechos</h3>
+                <p class="mt-4 font-body text-base text-on-surface-variant italic leading-relaxed">
+                    "But you will receive power when the Holy Spirit has come upon you..."
+                </p>
+                <div class="mt-6 pt-6 border-t border-outline-variant/10">
+                    <span class="font-label text-[11px] font-bold text-secondary uppercase tracking-widest">Chronicle of
+                        the Apostles</span>
+                </div>
+            </div>
+            <!-- Section: Proféticos -->
+            <div class="pt-8">
+                <div class="flex items-baseline gap-4 mb-4">
+                    <h2 class="text-xl font-display italic text-primary">Proféticos</h2>
+                    <div class="h-px flex-1 bg-surface-container-high"></div>
+                </div>
+                <div routerLink="/new-testament/apocalipsis"
+                    class="group bg-primary text-on-primary p-10 rounded-xl transition-all hover:shadow-2xl hover:shadow-primary/20 cursor-pointer overflow-hidden relative">
+                    <div class="absolute -right-4 -bottom-4 opacity-10">
+                        <span class="material-symbols-outlined text-9xl">visibility</span>
+                    </div>
+                    <h3 class="text-4xl font-display italic relative z-10">apocalipsis</h3>
+                    <p class="mt-4 font-body text-primary-fixed-dim text-sm italic relative z-10">The Unveiling of the
+                        King.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Cartas Paulinas (Bento Grid Style) -->
+        <section class="lg:col-span-12 mt-12">
+            <div class="flex items-baseline gap-4 mb-10">
+                <h2 class="text-3xl font-display font-bold text-primary">Cartas Paulinas</h2>
+                <div class="h-px flex-1 bg-surface-container-high"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Book Chips -->
+                <div routerLink="/new-testament/romanos"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">ROM</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">romanos</span>
+                </div>
+                <div
+                    routerLink="/new-testament/1corintios"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">1 COR</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">1 corintios</span>
+                </div>
+                <div routerLink="/new-testament/2corintios"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">2 COR</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">2 corintios</span>
+                </div>
+                <div routerLink="/new-testament/galatas"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">GAL</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">galatas</span>
+                </div>
+                <div routerLink="/new-testament/efesios"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">EFE</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">efesios</span>
+                </div>
+                <div routerLink="/new-testament/filipenses"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">FIL</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">filipenses</span>
+                </div>
+                <div routerLink="/new-testament/colosences"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">COL</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">colosences</span>
+                </div>
+                <div routerLink="/new-testament/1tesalonicenses"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">1 TES</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">1
+                        tesalonicenses</span>
+                </div>
+                <div routerLink="/new-testament/2tesalonicenses"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">2 TES</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">2
+                        tesalonicenses</span>
+                </div>
+                <div routerLink="/new-testament/1timoteo"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">1 TIM</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">1 timoteo</span>
+                </div>
+                <div routerLink="/new-testament/2timoteo"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">2 TIM</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">2 timoteo</span>
+                </div>
+                <div routerLink="/new-testament/tito"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">TIT</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">tito</span>
+                </div>
+                <div
+                    routerLink="/new-testament/filemon"
+                    class="flex flex-col gap-1 p-6 bg-surface-container-low rounded-xl hover:bg-surface-container-high transition-colors cursor-pointer group col-start-1">
+                    <span class="font-label text-[10px] text-tertiary-fixed-dim font-bold">FLM</span>
+                    <span class="font-display italic text-lg text-primary group-hover:text-amber-800">filemon</span>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Cartas Generales -->
+        <section class="lg:col-span-12 mt-12 mb-20">
+            <div class="flex items-baseline gap-4 mb-10">
+                <h2 class="text-3xl font-display font-bold text-primary">Cartas Generales</h2>
+                <div class="h-px flex-1 bg-surface-container-high"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4">
+                <div routerLink="/new-testament/hebreos"
+                    class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-xl hover:bg-surface-container shadow-sm transition-all group cursor-pointer">
+                    <h3 class="font-display italic text-lg text-primary group-hover:text-amber-800">hebreos</h3>
+                </div>
+                <div routerLink="/new-testament/santiago"
+                    class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-xl hover:bg-surface-container shadow-sm transition-all group cursor-pointer">
+                    <h3 class="font-display italic text-lg text-primary group-hover:text-amber-800">santiago</h3>
+                </div>
+                <div routerLink="/new-testament/1pedro"
+                    class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-xl hover:bg-surface-container shadow-sm transition-all group cursor-pointer">
+                    <h3 class="font-display italic text-lg text-primary group-hover:text-amber-800">1 pedro</h3>
+                </div>
+                <div routerLink="/new-testament/2pedro"
+                    class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-xl hover:bg-surface-container shadow-sm transition-all group cursor-pointer">
+                    <h3 class="font-display italic text-lg text-primary group-hover:text-amber-800">2 pedro</h3>
+                </div>
+                <div routerLink="/new-testament/1juan"
+                    class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-xl hover:bg-surface-container shadow-sm transition-all group cursor-pointer">
+                    <h3 class="font-display italic text-lg text-primary group-hover:text-amber-800">1 juan</h3>
+                </div>
+                <div routerLink="/new-testament/2juan"
+                    class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-xl hover:bg-surface-container shadow-sm transition-all group cursor-pointer">
+                    <h3 class="font-display italic text-lg text-primary group-hover:text-amber-800">2 juan</h3>
+                </div>
+                <div routerLink="/new-testament/3juan"
+                    class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-xl hover:bg-surface-container shadow-sm transition-all group cursor-pointer">
+                    <h3 class="font-display italic text-lg text-primary group-hover:text-amber-800">3 juan</h3>
+                </div>
+                <div routerLink="/new-testament/judas"
+                    class="p-6 bg-surface-container-low border border-outline-variant/10 rounded-xl hover:bg-surface-container shadow-sm transition-all group cursor-pointer">
+                    <h3 class="font-display italic text-lg text-primary group-hover:text-amber-800">judas</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Floating Decorative Element -->
+    <div class="absolute top-20 right-20 hidden xl:block opacity-20 pointer-events-none">
+        <div
+            class="w-64 h-64 border-[0.5px] border-primary-container rounded-full flex items-center justify-center p-8">
+            <div
+                class="w-full h-full border-[0.5px] border-primary-container rounded-full flex items-center justify-center p-8 animate-pulse">
+                <span class="material-symbols-outlined text-4xl text-primary">menu_book</span>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- </div> -->
+<!-- BottomNavBar (Mobile Only) -->
+<nav
+    class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-stone-50/90 dark:bg-slate-950/90 backdrop-blur-lg border-t border-stone-200/20 dark:border-slate-800/20 shadow-[0_-4px_24px_-4px_rgba(0,0,0,0.06)] z-50 rounded-t-xl">
+    <a class="flex flex-col items-center justify-center text-amber-800 dark:text-amber-200 bg-amber-50/50 dark:bg-amber-900/20 rounded-xl px-4 py-1 active:scale-95 transition-all duration-150"
+        href="#">
+        <span class="material-symbols-outlined">book_2</span>
+        <span class="font-label text-[10px] font-semibold uppercase tracking-tighter">Read</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-stone-100 active:scale-95 transition-all duration-150"
+        href="#">
+        <span class="material-symbols-outlined">search</span>
+        <span class="font-label text-[10px] font-semibold uppercase tracking-tighter">Search</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-stone-100 active:scale-95 transition-all duration-150"
+        href="#">
+        <span class="material-symbols-outlined">storm</span>
+        <span class="font-label text-[10px] font-semibold uppercase tracking-tighter">Insights</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-slate-400 dark:text-slate-500 hover:text-slate-900 dark:hover:text-stone-100 active:scale-95 transition-all duration-150"
+        href="#">
+        <span class="material-symbols-outlined">history_edu</span>
+        <span class="font-label text-[10px] font-semibold uppercase tracking-tighter">Scribe</span>
+    </a>
+</nav>
