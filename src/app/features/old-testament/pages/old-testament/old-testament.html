@@ -1,0 +1,350 @@
+<main class="ml-80 mt-20 p-12 overflow-y-auto min-h-screen">
+    <!-- Hero Header Section -->
+    <section class="mb-16 max-w-4xl">
+        <h1 class="font-serif italic text-6xl Newsreader text-primary mb-4 leading-tight">Antiguo Testamento: El Canon
+            Hebreo</h1>
+        <p class="font-serif text-lg text-on-surface-variant max-w-2xl leading-relaxed">
+            El Antiguo Testamento cuenta la historia del pueblo de Israel. Esta historia está basada en la fe del pueblo en el Dios de Israel y su vida religiosa como pueblo de Dios.
+        </p>
+    </section>
+    <!-- Bento Grid Layout for Sections -->
+    <div class="grid grid-cols-12 gap-8">
+        <!-- Section: La Ley (The Law) -->
+        <div
+            class="col-span-12 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 transition-all hover:bg-white border-b-4 border-primary">
+            <div class="flex justify-between items-start mb-8">
+                <div>
+                    <h3 class="font-serif italic text-3xl text-primary mb-1">La Ley</h3>
+                    <span
+                        class="font-label text-xs uppercase tracking-widest text-on-tertiary-container bg-tertiary-fixed-dim px-2 py-0.5 rounded">Pentateuco</span>
+                </div>
+                <span class="material-symbols-outlined text-4xl text-primary-container">balance</span>
+            </div>
+            <div class="flex flex-col gap-3" >
+                <a class="group flex justify-between items-center py-2 border-b border-outline-variant/20 hover:border-primary transition-all"
+                    [routerLink]="['/old-testament/genesis']">
+                    <span class="font-label text-sm text-on-surface">Génesis</span>
+                    <span
+                        class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-all">arrow_forward</span>
+                </a>
+                <a class="group flex justify-between items-center py-2 border-b border-outline-variant/20 hover:border-primary transition-all"
+                    [routerLink]="['/old-testament/exodo']">
+                    <span class="font-label text-sm text-on-surface">Exodo</span>
+                    <span
+                        class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-all">arrow_forward</span>
+                </a>
+                <a class="group flex justify-between items-center py-2 border-b border-outline-variant/20 hover:border-primary transition-all"
+                    [routerLink]="['/old-testament/levitico']">
+                    <span class="font-label text-sm text-on-surface">Levítico</span>
+                    <span
+                        class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-all">arrow_forward</span>
+                </a>
+                <a class="group flex justify-between items-center py-2 border-b border-outline-variant/20 hover:border-primary transition-all"
+                    [routerLink]="['/old-testament/numeros']">
+                    <span class="font-label text-sm text-on-surface">Números</span>
+                    <span
+                        class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-all">arrow_forward</span>
+                </a>
+                <a class="group flex justify-between items-center py-2 hover:border-primary transition-all" [routerLink]="['/old-testament/deuteronomio']">
+                    <span class="font-label text-sm text-on-surface">Deuteronomio</span>
+                    <span
+                        class="material-symbols-outlined text-sm opacity-0 group-hover:opacity-100 transition-all">arrow_forward</span>
+                </a>
+            </div>
+        </div>
+        <!-- Visual Break Component -->
+        <div class="col-span-12 lg:col-span-8 relative rounded-xl overflow-hidden h-64 lg:h-auto">
+            <img alt="Detail of a weathered parchment manuscript with elegant black ink calligraphy and gold leaf illuminated initials in a scholarly setting"
+                class="w-full h-full object-cover grayscale opacity-40 mix-blend-multiply"
+                data-alt="Close-up of ancient biblical scrolls and weathered parchment paper with elegant scholarly calligraphy and soft atmospheric museum lighting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsR8H_UYYUvRgMnMF2vTnwoqfIbSFT6LGPk_NnXdip61Sv30Lx7w4v8PfoZLgo9s4BRO8cLvhVXfQlv3y0AQmf8qD4sQGRGoxErrYVLWF-FriWDKYQdjbTKKQuWlKc47fAJ-Vt50rVZmtHwJNPZ8qhyWaJgDzHgvBeOVu7gYGaQ01mEUsADPNVZGG2N3i5T1RJKksbf4TPmX-7cKiI2Uo7X6wIW5MxmUhc2gF-XAZLTuAZUpuWETQwnG-CjPKNCSav3Li_slUPE0zh" />
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent flex items-center p-12">
+                <div class="max-w-md">
+                    <span
+                        class="font-label text-xs uppercase tracking-[0.3em] text-tertiary-fixed-dim block mb-4">Reflexión
+                        Académica</span>
+                    <p class="font-serif italic text-2xl text-white leading-relaxed">"La palabra de Dios es viva y
+                        eficaz, más cortante que toda espada de dos filos."</p>
+                </div>
+            </div>
+        </div>
+        <!-- Section: Historicos (Historical Books) -->
+        <div
+            class="col-span-12 lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6 bg-surface-container-low rounded-xl p-8">
+            <div class="col-span-full mb-4">
+                <h3 class="font-serif italic text-3xl text-primary">Históricos</h3>
+                <div class="w-20 h-0.5 bg-primary mt-2"></div>
+            </div>
+            <div class="flex flex-col gap-2">
+                <!-- Column 1 -->
+                <div class="flex flex-col">
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/josue']">
+                        <span class="font-label text-sm font-medium">Josué</span>
+                        <span class="text-xs text-on-surface-variant font-label">24 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/jueces']">
+                        <span class="font-label text-sm font-medium">Jueces</span>
+                        <span class="text-xs text-on-surface-variant font-label">21 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/rut']">
+                        <span class="font-label text-sm font-medium">Rut</span>
+                        <span class="text-xs text-on-surface-variant font-label">4 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/1samuel']">
+                        <span class="font-label text-sm font-medium">1 Samuel</span>
+                        <span class="text-xs text-on-surface-variant font-label">31 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/2samuel']">
+                        <span class="font-label text-sm font-medium">2 Samuel</span>
+                        <span class="text-xs text-on-surface-variant font-label">24 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/1reyes']">
+                        <span class="font-label text-sm font-medium">1 Reyes</span>
+                        <span class="text-xs text-on-surface-variant font-label">22 Cap.</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex flex-col gap-2 border-l border-outline-variant/30 pl-6">
+                <!-- Column 2 -->
+                <div class="flex flex-col">
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/2reyes']">
+                        <span class="font-label text-sm font-medium">2 Reyes</span>
+                        <span class="text-xs text-on-surface-variant font-label">25 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/1cronicas']">
+                        <span class="font-label text-sm font-medium">1 Crónicas</span>
+                        <span class="text-xs text-on-surface-variant font-label">29 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/2cronicas']">
+                        <span class="font-label text-sm font-medium">2 Crónicas</span>
+                        <span class="text-xs text-on-surface-variant font-label">36 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/esdras']">
+                        <span class="font-label text-sm font-medium">Esdras</span>
+                        <span class="text-xs text-on-surface-variant font-label">10 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/nehemias']">
+                        <span class="font-label text-sm font-medium">Nehemías</span>
+                        <span class="text-xs text-on-surface-variant font-label">13 Cap.</span>
+                    </a>
+                    <a class="px-4 py-3 rounded-lg hover:bg-surface-container-highest flex items-center justify-between group transition-all"
+                        [routerLink]="['/old-testament/ester']">
+                        <span class="font-label text-sm font-medium">Ester</span>
+                        <span class="text-xs text-on-surface-variant font-label">10 Cap.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Section: Poeticos y Sabiduria -->
+        <div
+            class="col-span-12 lg:col-span-4 bg-surface-container-lowest rounded-xl p-8 flex flex-col justify-between shadow-sm border-t-2 border-tertiary-fixed-dim">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-tertiary-fixed-dim">auto_stories</span>
+                    <h3 class="font-serif italic text-3xl text-primary">Poéticos</h3>
+                </div>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-4 group cursor-pointer" [routerLink]="['/old-testament/job']">
+                        <div 
+                            class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-label text-xs font-bold text-on-secondary-container group-hover:bg-primary group-hover:text-white transition-all">
+                            JOB</div>
+                        <span
+                            class="font-serif italic text-lg group-hover:translate-x-1 transition-transform">Job</span>
+                    </li>
+                    <li class="flex items-center gap-4 group cursor-pointer" [routerLink]="['/old-testament/salmos']">
+                        <div 
+                            class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-label text-xs font-bold text-on-secondary-container group-hover:bg-primary group-hover:text-white transition-all">
+                            SAL</div>
+                        <span
+                            class="font-serif italic text-lg group-hover:translate-x-1 transition-transform">Salmos</span>
+                    </li>
+                    <li class="flex items-center gap-4 group cursor-pointer" [routerLink]="['/old-testament/proverbios']">
+                        <div 
+                            class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-label text-xs font-bold text-on-secondary-container group-hover:bg-primary group-hover:text-white transition-all">
+                            PRO</div>
+                        <span
+                            class="font-serif italic text-lg group-hover:translate-x-1 transition-transform">Proverbios</span>
+                    </li>
+                    <li class="flex items-center gap-4 group cursor-pointer" [routerLink]="['/old-testament/eclesiastes']">
+                        <div 
+                            class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-label text-xs font-bold text-on-secondary-container group-hover:bg-primary group-hover:text-white transition-all">
+                            ECL</div>
+                        <span
+                            class="font-serif italic text-lg group-hover:translate-x-1 transition-transform">Eclesiastés</span>
+                    </li>
+                    <li class="flex items-center gap-4 group cursor-pointer" [routerLink]="['/old-testament/cantares']">
+                        <div 
+                            class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center font-label text-xs font-bold text-on-secondary-container group-hover:bg-primary group-hover:text-white transition-all">
+                            CAN</div>
+                        <span
+                            class="font-serif italic text-lg group-hover:translate-x-1 transition-transform">Cantares</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-8 pt-8 border-t border-outline-variant/20">
+                <p class="font-serif text-sm italic text-on-surface-variant leading-snug">"El temor de Jehová es el
+                    principio de la sabiduría."</p>
+            </div>
+        </div>
+        <!-- Section: Profetas Mayores -->
+        <div class="col-span-12 lg:col-span-6 bg-[#051125] text-white rounded-xl p-10 overflow-hidden relative">
+            <div class="relative z-10">
+                <h3 class="font-serif italic text-4xl mb-8">Profetas Mayores</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div [routerLink]="['/old-testament/isaias']"
+                        class="bg-white/5 backdrop-blur px-6 py-4 rounded-lg hover:bg-white/10 transition-colors cursor-pointer border-l-2 border-tertiary-fixed-dim">
+                        <span class="block font-serif italic text-xl">Isaías</span>
+                        <span class="block font-label text-[10px] uppercase tracking-widest text-white/50 mt-1">El
+                            Profeta Evangelista</span>
+                    </div>
+                    <div [routerLink]="['/old-testament/jeremias']"
+                        class="bg-white/5 backdrop-blur px-6 py-4 rounded-lg hover:bg-white/10 transition-colors cursor-pointer border-l-2 border-white/20">
+                        <span class="block font-serif italic text-xl">Jeremías</span>
+                        <span class="block font-label text-[10px] uppercase tracking-widest text-white/50 mt-1">El
+                            Profeta Llorón</span>
+                    </div>
+                    <div [routerLink]="['/old-testament/lamentaciones']"
+                        class="bg-white/5 backdrop-blur px-6 py-4 rounded-lg hover:bg-white/10 transition-colors cursor-pointer border-l-2 border-white/20">
+                        <span class="block font-serif italic text-xl">Lamentaciones</span>
+                        <span class="block font-label text-[10px] uppercase tracking-widest text-white/50 mt-1">Elegías
+                            de Sión</span>
+                    </div>
+                    <div [routerLink]="['/old-testament/ezequiel']"
+                        class="bg-white/5 backdrop-blur px-6 py-4 rounded-lg hover:bg-white/10 transition-colors cursor-pointer border-l-2 border-white/20">
+                        <span class="block font-serif italic text-xl">Ezequiel</span>
+                        <span class="block font-label text-[10px] uppercase tracking-widest text-white/50 mt-1">Visiones
+                            de la Gloria</span>
+                    </div>
+                    <div [routerLink]="['/old-testament/daniel']"
+                        class="bg-white/5 backdrop-blur px-6 py-4 rounded-lg hover:bg-white/10 transition-colors cursor-pointer border-l-2 border-white/20 sm:col-span-2">
+                        <span class="block font-serif italic text-xl">Daniel</span>
+                        <span
+                            class="block font-label text-[10px] uppercase tracking-widest text-white/50 mt-1">Apocalíptica
+                            Judía</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute -right-20 -bottom-20 w-64 h-64 bg-white/5 rounded-full blur-3xl"></div>
+        </div>
+        <!-- Section: Profetas Menores -->
+        <div class="col-span-12 lg:col-span-6 bg-surface-container-high rounded-xl p-10">
+            <div class="flex items-baseline gap-4 mb-8">
+                <h3 class="font-serif italic text-3xl text-primary">Profetas Menores</h3>
+                <span class="font-label text-xs text-on-surface-variant font-light tracking-wide italic">Los Doce</span>
+            </div>
+            <div class="grid grid-cols-3 md:grid-cols-4 gap-y-6 gap-x-2">
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/oseas']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Oseas</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/joel']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Joel</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/amos']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Amós</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/abdias']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Abdías</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/jonas']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Jonás</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/miqueas']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Miqueas</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/nahum']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Nahúm</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/habacuc']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Habacuc</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/sofonias']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Sofonías</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/hageo']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Hageo</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/zacarias']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Zacarías</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+                <div class="text-center group cursor-pointer" [routerLink]="['/old-testament/malaquias']">
+                    <span
+                        class="block font-serif italic text-lg text-primary group-hover:scale-110 transition-transform">Malaquías</span>
+                    <div
+                        class="w-1 h-1 bg-tertiary-fixed-dim rounded-full mx-auto mt-1 opacity-0 group-hover:opacity-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Meta Info -->
+    <footer
+        class="mt-20 pt-10 border-t border-outline-variant/30 text-on-surface-variant font-label text-xs flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-4">
+            <img alt="Small scholarly logo with an inkwell and feather pen in minimalist thin line style"
+                class="w-8 h-8 opacity-40"
+                data-alt="Minimalist emblem of an ancient inkwell and quill pen in thin charcoal lines on white parchment"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzvWDmavVQF3Fa8hPcCpQxS_cCtm0_F7xkRl0c2w9S2MCKSSvkv1PfZTU9lQ_IVTTNK6AzhSOjH3dAFRYjXABbtsnAggbmsH3H0UuZKlq33z2mavyKMNqx9n_Db_ns18La1y51nPeOf0ZwyMfauezoUNxGwAmniA3t8tP1vPYvaHrxyVST4P3I1bGAUMj8ar6XhUKa6-KsI2LhEt8B4h7cozfdLxK8rKF2S1Hy_WWb_0v69ldg1Cq_Od1fxfR4zkOszex_D7PuJRwG" />
+            <span>© 2024 The Illuminated Manuscript • Scholarly Edition</span>
+        </div>
+        <div class="flex gap-8 uppercase tracking-[0.2em]">
+            <a class="hover:text-primary transition-colors" href="#">Archivos</a>
+            <a class="hover:text-primary transition-colors" href="#">Fuentes</a>
+            <a class="hover:text-primary transition-colors" href="#">Licencia</a>
+        </div>
+    </footer>
+</main>
