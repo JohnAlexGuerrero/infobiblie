@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Book, IBookResponse } from '../models/book';
-import { capitalizeFirst } from '../utils/utils';
+import { Book, IBookResponse, IChapterResponse, IVerse } from '../models/book';
+import { capitalizeFirst, capitalizeFirstShort } from '../utils/utils';
 
 @Injectable({
   providedIn: 'root',
@@ -22,11 +22,45 @@ export class DataServices {
   getBook = async(bookSku: string): Promise<IBookResponse> => {
     const db = await this.getDb(bookSku).then(data => data);
 
+    const dataset = this.getAllChapterResponse(bookSku, db.default.length, db.default);
+    // console.log('total content: ', dataset);
     return {
-      book: capitalizeFirst(bookSku),
+      bookName: capitalizeFirst(bookSku),
       chapters: db.default.length - 1,
-      text: db.default
+      chapterContent: dataset
     }
+  }
+  
+  getAllChapterResponse = (bookSku: string, chapters: number, db: string[]) => {
+    const book = capitalizeFirstShort(bookSku);
+    let data: IChapterResponse[] = [];
+    
+    for (let index = 0; index < chapters; index++) {
+      let element = db[index];
+
+      const dataset = this.setVerse(book, index,[element]);
+      data.push({book: book, chapter: index, verses: dataset}); 
+    }
+    return data;
+  }
+
+  setVerse(book: string, chapter: number, content: string[]) {
+    let data: IVerse[] = [];
+    for (let index = 0; index < content.length; index++) {
+      const element = content[index];
+      for (let y = 0; y < element.length; y++) {
+        const elementY = element[y];
+        let nameStr = `${book}. ${chapter}: ${y+1}`
+        
+        if (chapter==0) {
+          nameStr = "Introducción";
+        }
+
+        data.push({id: `${nameStr}`, text: elementY});
+      }
+    }
+
+    return data;
   }
   
 }

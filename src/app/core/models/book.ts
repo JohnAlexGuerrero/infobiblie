@@ -6,8 +6,18 @@ export interface Book {
 
 
 export interface IBookResponse {
-  book: string;
+  bookName: string;
   chapters: number;
-  // sinopsis?: string;
-  text: string[];
+  chapterContent: IChapterResponse[];
+}
+
+export interface IVerse {
+  id: string;
+  text: string;
+}
+
+export interface IChapterResponse {
+  book: string;
+  chapter: number;
+  verses: IVerse[];
 }
